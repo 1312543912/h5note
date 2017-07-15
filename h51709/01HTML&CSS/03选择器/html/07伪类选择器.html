@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*浏览器超链接缓存严重*/
+			/*爱恨原则     Lv ha:如果四中全部写全  必须按照这个顺序写*/
+			a{
+				/*取消下滑线*/
+				/*text-decoration: none;
+				color: white;
+				background-color: black;*/
+			}
+			/*等价于a{}*/
+			a:link{
+				text-decoration: none;
+				color: white;
+				background-color: black;
+			}
+			a:visited{
+				background-color:orange;
+			}
+			/*交集选择器*/
+			a:hover{
+				color: red;
+			}
+			a:active{
+				color: green;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!--伪类选择器  类名是系统内置的
+			:hover 鼠标掠过
+			:active 鼠标点按
+			:visited 鼠标访问过
+			：link   鼠标设置超链接在默认
+			     一般结合超链接一起使用
+		-->
+		
+		<a href="#">超链接</a>
+			<a href="#">自定义超链接</a>
+	</body>
+</html>

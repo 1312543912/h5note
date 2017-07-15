@@ -1,0 +1,51 @@
+<!--放在最上面会有一些差别  先加载style后加载doctype 导致-->
+<style type="text/css">
+	p{
+		background-color: red;
+	}
+</style>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--1.使用link标签引入样式   常用-->
+		<!--<link rel="stylesheet" type="text/css" href="../css/index.css" />-->
+	    <!--2.文档内嵌方式  建议写在head中  不限制个数-->
+	    <style  type="text/css">
+	    	/*样式规则*/
+	    	/*@import url("../css/index.css" );*/
+	    	/*显示覆盖  从上到下去执行  */
+	    	h1{
+	    		background-color: green;
+	    	}
+	    	h1{
+	    		background-color: red;
+	    	}
+	    </style>
+	</head>
+	<body>
+		<!--结构与样式杂糅 不利于维护-->
+		<table border="1 soild red" bgcolor="red">
+		<!--结构与样式分离    便于维护  CSS:层叠样式表-->
+		<!--css样式调整 实现结构与样式分离  css属性-->
+		<!--IE浏览器是跟随操作系统   win10装的浏览器IE  Edge 增加Edge是为了增强兼容性  额外属性
+			IE版本变迁非常大  差别大   IE6  IE8   IE9  +  IE版本太多出现很多兼容问题  于是出现了高版本Edge解决兼问题
+		-->
+		</table>
+		
+		
+		<!--CSS引入方式：1.外联方式（独立的 CSS 文件）-->
+		
+		<h1>111</h1>
+		<p>222</p>
+		
+		<!--3.行内样式  借助  style 标签属性  多条使用；分割-->
+		
+		<label style="background-color: red;">lable hahhhhh</label>
+		
+		<a href="">dfsddf</a>	
+		<a href="">dfsddf</a>
+	</body>
+</html>
+

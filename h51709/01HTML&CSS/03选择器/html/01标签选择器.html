@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*语法：根据标签名匹配文档元素*/
+			/*选择符{样式规则}*/
+			/*块级元素默认和父级元素范围内设置的居中效果*/
+			h1{
+				color: red;
+				width: 100px;
+				height: 100px;
+				background-color: blue;
+				margin: 0 auto;
+				text-align: center;
+				line-height: 100px;
+			}
+			/*样式设置没有发生冲突时，不管哪一种设置方式，都会作用于元素
+			 样式设置出现冲突，才会有优先级的区分*/
+			p{
+				color: blue;
+				text-align: center;
+			}
+			body
+			{
+				width: 800px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--块级元素如果不给宽  那么块级元素就跟父级元素一样宽-->
+		<h1>选择器</h1>
+		<p>标签选择器</p>
+		<p>ID选择器</p>
+		<p style="color: red;">Class选择器</p>
+	</body>
+</html>

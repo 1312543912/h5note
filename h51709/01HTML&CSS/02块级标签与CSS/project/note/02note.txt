@@ -1,0 +1,10 @@
+1.引入方式  外联  内嵌  行内
+2.
+3.
+4.元素类型以及各自特点：  块元素   行内元素  行内块元素
+5.元素嵌套：块元素可以嵌套任何元素；行内元素可以嵌套行内元素和行内块元素（不要嵌套块元素）；
+6.元素类型转换：display：inline/block/inline-block
+css属性：width height  background-color  color  text-align  line-height   displsy  vertical-aling
+上午：
+列表：ul li ol li dl
+表格：table th  tr  td  cellsapcing  cellpadding  border  合并单元格：rowspan colspan

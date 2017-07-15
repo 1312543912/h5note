@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			table {
+				background-color: red;
+				border: 1;
+				height: 100px;
+				widows: 100px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--1.块级标签（元素）  不会和任何元素共行  自己单独占一行-->
+		<h1>h1</h1>
+		<p>p</p>
+		<ul>
+			<li>li one</li>
+			<li>li one</li>
+			<li>li one</li>
+		</ul>
+		<!--对table大小设置一般修改td-->
+		<table>
+			<tr>
+				<td>td1</td>
+				<td>td2</td>
+			</tr>
+			<tr>
+				<td>td1</td>
+				<td>td2</td>
+			</tr>
+		</table>
+		<!--2.行内元素（行内）1.可以共行显示  2.不能手动调整大小，大小由内容决定-->
+		<span>1</span>
+		<label>label</label>
+		<p>p</p>
+		<strong>strong</strong>
+		<!--3.行内块元素：既可以设置宽高  又能共行显示-->
+		<img src="../../../01HTML/project/html/imgs/one.jpg" />
+		<!--元素嵌套-->
+		<!--1.块级元素  可以嵌套其他块级元素 和行内元素和行内块元素（任何元素）    特殊情况：
+	   	P元素只能内部嵌套行内元素
+	   -->
+		<!--ul li-->
+		<h1><p>12132</p></h1>
+		<p>
+			<h1>124516</h1></p>
+			<div>
+				<img src="../../../01HTML/project/html/imgs/one.jpg" />
+				
+			</div>
+			
+			<span><strong>strong  yes  能嵌套</strong></span>
+			<!--大容器中嵌套小容器-->
+			<!--行内元素只能嵌套其他行内元素  行内元素高度-->
+			<span>
+				spanneirong
+				<h1>h11111</h1>
+			    <ul>
+			    	<li>one</li>
+			    	<li>one</li>
+			    	<li>one</li>
+			    </ul>
+			</span>
+	</body>
+
+</html>

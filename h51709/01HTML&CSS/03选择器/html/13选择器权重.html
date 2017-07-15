@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*id  选择器权重为0100*/
+			
+			#nav {
+				width: 800px;
+				height: 100px;
+				background-color: gray;
+			}
+			/*标签选择器  标签权重为1*/
+			
+			div {
+				width: 800px;
+				height: 100px;
+				background-color: black;
+			}
+			/*id  选择器权重为0100*/
+			
+			.navgation {
+				width: 800px;
+				height: 100px;
+				background-color: red;
+			}
+			/*属性选择器   属性选择器权重0010  权重一样时谁在后显示谁  覆盖*/
+			
+			[class='navgation'] {
+				background-color: green;
+			}
+			
+			a:link {
+				color: red;
+			}
+			/*组合选择器   权重 值为选择器之和*/
+			
+			div a {
+				color: pink;
+			}
+			
+			#nav a {
+				color: blue;
+			}
+			/*3*/
+			
+			div ul>li {
+				color: red;
+			}
+			/*21*/
+			
+			.navgation .list>li {
+				color: green;
+			}
+			
+			#nav .navgation li {
+				color: black !important;
+			}
+			
+			/*行内样式优先级最高     权重1000
+			 关键字：！important  设置某个属性值的权重最高
+			 * */
+		</style>
+	</head>
+
+	<body>
+		<!--选择器权重  0000-->
+		<div id="nav" class="navgation">
+			<a href="#">d</a>
+		</div>
+		<ul class="list">
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+		</ul>
+	</body>
+
+</html>

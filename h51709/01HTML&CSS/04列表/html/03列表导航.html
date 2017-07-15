@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			#nav {
+				width: 800px;
+				height: 35px;
+				background-color: lightblue;
+				margin: 0px auto;
+				text-align: center;
+			}
+			
+			#nav ul {
+				list-style: none;
+			}
+			/*1.设置元素浮动  元素会具有行内元素的特征而且不存在行内快之间的间距问题   同时还可以设置宽高
+			 float:left  right    （有点像行内块级元素  但是又没有行内块级元素的边距  是挨着的）
+			 2.浮动元素脱离文档流    不占位    脱离文档  不在文档之中
+			 * */
+			
+			li {
+				float: left;
+				width: 100px;
+				height: 35px;
+				line-height: 35px;
+			}
+			
+			a {
+				text-decoration: none;
+				display: inline-block;
+				width: 100px;
+				height: 35px;
+			}
+			
+			a:hover {
+				color: white;
+				background-color: pink;
+			}
+			label{
+				float: left;
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			}
+			h1{
+				width: 800px;
+				height: 200px;
+				background-color: black;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="nav">
+			<ul>
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="#">首页</a>
+				</li>
+			</ul>
+		</div>
+		<label>lable float</label>
+		<h1>h1</h1>
+	</body>
+
+</html>

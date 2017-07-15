@@ -1,0 +1,13 @@
+/*样式书写：选择器*/
+/*标签属性*/
+body{
+	/*样式规则*/
+	background-color: orange;
+}
+h1{
+	background-color: red;
+}
+h2{
+	/*修改文本色*/
+	color: blue;
+}

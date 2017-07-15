@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+			/*	padding: 0px;*/
+			}
+			/*列表样式     list-style-position    list-style-imgag   list-style-type   list-style*/
+			ul{
+				width:300px;
+				/*设置项目符号类型：
+				 list-style-type:disc(默认)/circle/squary
+				 * */
+				list-style-type: square;
+				/*position:设置项目符号的位置，是否跟内容在一起，默认跟内容分离，在内容之外，outside*/
+				list-style-position: outside;
+				list-style-image: url(../../01HTML/project/images/one.ico);
+				/*属性连写简写*/
+				/*border: 1px solid red;*/
+				list-style: square inside url(../../01HTML/project/images/one.ico);
+				/*没有项目符号*/
+				list-style: none;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>1111</li>
+			<li>1111</li>
+			<li>1111</li>
+			<li>1111</li>
+			<li>1111</li>			
+		</ul>
+	</body>
+</html>

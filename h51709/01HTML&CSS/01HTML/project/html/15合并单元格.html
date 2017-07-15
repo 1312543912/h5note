@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>合并单元格</title>
+	</head>
+	<body>
+		<table align="center"  border="1px" width="300px" height="300px" cellspacing="0px" bgcolor="orange">
+		  <tr align="center">
+		  	<!--colspan :跨列合并，属性值就是横跨的列数，包含自身列-->
+		  	<td colspan="3">班级</td>
+		  </tr align="center">
+		  <!--rolspan :跨行操作-->
+		  <tr align="center" valign="top">
+		  	<!--第一个单元格向下跨行，占据下一行的第一个单元格位置
+		  		下一行对应删除单元格
+		  	-->
+		  	<td rowspan="2">班级</td>
+		  	<td>人数</td>
+		  	<td>科目</td>
+		  </tr>
+		   <tr align="center">
+		  	<td>人数</td>
+		  	<td>科目</td>
+		  </tr>
+		</table>
+		
+		
+		<table border="1" bgcolor="cyan" width="200px" height="200px" align="center">
+			<!--设置-->
+			<caption>个人信息登记表</caption>
+			<tr >
+				<!--th和td一样只不过自动加一个居中和加粗-->
+				<th>姓名</th>
+				<th>年龄</th>
+			</tr>
+			<tr >
+				<td align="center" valign="center">姓名</td>
+				<td align="center" valign="top">年龄</td>
+			</tr>
+			<tr >
+				<td align="center" valign="top">姓名</td>
+				<td align="center" valign="top">年龄</td>
+			</tr>
+		</table>
+		
+		
+		<!--表格完整结构    头  主体  尾-->
+		<table>
+			<thead>
+				<tr >
+				<td align="center" valign="top">姓名</td>
+				<td align="center" valign="top">年龄</td>
+			</tr>
+			</thead>
+			<tfoot>
+				<tr >
+				<td align="center" valign="top">姓名</td>
+				<td align="center" valign="top">年龄</td>
+			</tr>
+			</tfoot>
+			<tbody>
+				<tr >
+				<td align="center" valign="top">姓名</td>
+				<td align="center" valign="top">年龄</td>
+			</tr>
+			</tbody>
+			
+		</table>
+	</body>
+</html>

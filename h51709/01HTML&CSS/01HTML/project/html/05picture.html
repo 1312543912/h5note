@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h1>图片标签:由于jpg图片不是透明所以经常使用的图片格式是png</h1>
+		<!--  img 标签用来加载图片 使用src属性加载图片资源  -->
+		<!--  路径：1.绝对路径一般以/或者盘符开头 -->
+		<!--  img 标签用来加载图片 使用src属性加载图片资源  -->
+		<img src="/users/images/1.png"/>	
+		<!-- 2. 相对路径 ：资源处于同一个父级目录下，可以使用相对路径查找 -->
+		<img src="../images/one.jpg" />
+		<!--project/html/images/1.png-->
+		<img src="images/one.jpg" />
+		<!--没有处在同一级-->
+		<img src="imgs/one.jpg" />
+		<!--处在同一级-->
+		<img src="one.jpg" />
+		
+		<!--图片标签的属性 会按照图片原始大小来显示-->
+		<img src="../images/one.jpg" />
+		<!--调整图片尺寸 		
+		title属性 当有鼠标悬浮的时候title信息就会显示出来   
+		alt图片加载失败显示
+		在没有设置alt属性并且图片加载失败时候，title会直接显示出来
+		-->
+		<img src="../images/one.jpg" title="悬停显示" alt="这是一张长图" width="100px" height="100px"/>
+		<img src="../is/one.jpg" title="悬停显示" alt="这是一张长图" width="100px" height="100px"/>
+	</body>
+</html>

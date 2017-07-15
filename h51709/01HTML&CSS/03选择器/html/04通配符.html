@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--通配符选择器  表示匹配文档中所有元素-->
+        <style type="text/css">
+        	*{
+        		/*1.作用清除浏览器的默认样式；2。设置浏览器的基础样式*/
+        	    /*1.清楚外边距*/
+        	   margin: 0;
+        	   padding: 0;
+        	}
+        	/**/
+        	body{
+        		background-color: blue;
+        		/*字体颜色  字体大小   在body中设置*/
+        	}
+        	#header{
+        		height: 50px;
+        		background-color: gray;
+        	}
+        </style>
+	</head>
+	<body>
+		<div id="header">头部
+			<p class="banner">顶部内容介绍</p>
+			<p>普通内容介绍</p>
+		</div>
+		<div id="header">头部</div>
+		<div id="nav">导航</div>
+		<div id="main">主体
+			<p class="banner">主题共享</p>
+		</div>
+		<div id="foot">底部
+			<p class="banner">合作共享</p>
+		</div>
+	</body>
+</html>

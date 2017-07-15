@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--后代选择器  :父级元素的子元素查找过程  父元素  子元素。。。
+			不仅能匹配直接后代，也能匹配间接后代（匹配所有子元素）
+		-->
+		<style type="text/css">
+			/*后代选择器*/
+			#main div {
+				background-color: pink;
+			}
+			/*子选择器:匹配直接后代，不包换间接后代*/
+			#main>div{
+				background-color: green;
+			}
+			/*相邻兄弟选择器  +  ~
+			 当前元素下一个相邻的兄弟元素
+			 * */
+			#first+div{
+				background-color: red;
+			}
+			/*~匹配当前元素后所有的兄弟元素   向后匹配，之前的匹配不到
+			 只跟书写顺序有关 和权重无关*/
+			#first~div{
+				background-color: orange;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="main">
+			<div>
+				item
+			</div>
+			<div id="first">div item
+				<div>
+					内层DIV
+					<div>
+						最内层DIV
+					</div>
+				</div>
+			</div>
+
+			<div>item1</div>
+			<div>item1</div>
+			<div>item1</div>
+			<div>item1</div>
+		</div>
+		<div>out DIV</div>
+	</body>
+
+</html>

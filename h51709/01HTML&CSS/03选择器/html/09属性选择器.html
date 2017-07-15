@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			[title] {
+				color: red;
+			}
+			[class="class1"]{
+				color: blue;
+			}
+			/*表示属性值中包含制定词汇      允许属性值直接是指定词汇*/
+			[class~="s"]{
+				
+				background-color:green;
+			}
+			[class~="text"]{
+				background-color: pink;
+			}
+			/*以制定词汇-开头  或者   属性值是   text的元素*/
+			[class|="text"]{
+				color: orange;
+			}
+			/*.text{
+				background-color: pink;
+			}*/
+			/*属性值以c开头*/
+			[class^="c"]{
+				background-color: cyan;
+			}
+			[class$="1"]{
+				background-color: red;
+			}
+			[class*="i"]{
+				background-color: black;
+			}
+			[class~="hello"]{
+				background-color: red;
+			}
+		</style>
+	</head>
+
+	<body>
+		<p title="first">第一段</p>
+		<p title="first">第一段</p>
+		<label class="class1">label</label>
+		<span class="class2  s">span</span>
+		<strong class="strong text">strong</strong>
+		<em class="em text">em</em>
+		<label class="text">label23l</label>
+		<strong class="text">hahhh</strong>
+		<strong class="text-strong">33</strong>
+		
+		<h2 class="hello world">11</h2>
+		<h2 class="hello world dd">22</h2>
+	</body>
+
+</html>

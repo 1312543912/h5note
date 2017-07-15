@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			:root {
+				background-color: pink;
+			}
+			/*选择父元素下的第几个子元素设置样式  nth-child特别容易在父子嵌套出现错误*/
+			/*匹配第几个该类型的元素*/
+			/*不推荐使用*/
+			
+			li:nth-child(2) {
+				background-color: orange;
+			}
+			
+			li:first-child {
+				background-color: green;
+			}
+			
+			li:last-child {
+				background-color: yellow;
+			}
+			/*：nth-of-type（）{}   常用*/
+			
+			li:nth-of-type(4) {
+				color: yellow;
+			}
+			
+			li:nth-child(4) {
+				color: green;
+			}
+			
+			/*积偶行  odd==2n+1    even==2n*/
+			li:nth-of-type(2n){
+				background-color: black;
+			}
+			ul:nth-of-type(2n) li:nth-of-type(2n){
+				background-color: red;
+			}
+			/*p元素作为父元素中唯一子元素*/
+			p:only-child{
+				background-color: blue;
+			}
+			/*当前元素类型唯一存在*/
+			p:only-of-type{
+				background-color: #FF0000;
+			}
+			
+			div:empty{
+				width: 100px;
+				height: 100px;
+				background-color: orange;
+			}
+		</style>
+	</head>
+
+	<body>
+		<ul>
+			<li>列表内容</li>
+			<li>列表内容</li>
+			<li>列表内容</li>
+			<li>列表内容</li>
+			<li>列表内容</li>
+			<li>列表内容</li>
+			<li>列表内容</li>
+			<ul>
+				<li>列表内容</li>
+				<li>列表内容</li>
+				<li>列表内容</li>
+				<li>列表内容</li>
+				<li>列表内容</li>
+				<li>列表内容</li>
+			</ul>
+		</ul>
+
+		<ul>
+			<li>列表内容</li>
+			<li>列表内容</li>
+			<li>列表内容</li>
+			<li>列表内容</li>
+			<li>列表内容</li>
+			<li>列表内容</li>
+			<li>列表内容</li>
+		</ul>
+		<div>
+			<p>段落</p>		
+			<label>段落</label>	
+		</div>
+		<div></div>
+	</body>
+
+</html>

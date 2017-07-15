@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>div+css</title>
+	</head>
+	<body>
+		<!--元素类型的转换-->
+		<!--块级元素转换成为行内块  display:block(块) inline（行内）  inline-block（行内块）-->
+		<div style="height: 44px; background-color: gray;">导航</div>
+		<div style="height: 500px; background-color: green;">zhu ti
+		  <div style="width: 300px;height: 500px; background-color: red;display: inline-block;">
+		  	zuo
+		  </div>
+		  <div style="width: 400px;height: 500px；background-color: orange;display: inline-block;">
+		  	zhong
+		  </div>
+		  <div style="width: 300px;height: 500px;background-color: black;display: inline-block;">
+		  	you
+		  </div>
+		</div>
+		<div>di bu</div>
+		<!--行内块元素在共行时，以文本基线对齐，可以通过vertical-align来调整-->
+		<span style="display: inline-block;width: 100px;height: 100px;"></span>
+		<span style="border: 1 solid red;">span</span>
+	</body>
+</html>

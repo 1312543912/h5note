@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*::first-line   ::first-letter*/
+			
+			p {
+				height: 50px;
+				width: 100%;
+				line-height: 50px;
+			}
+			
+			p::first-letter {
+				font-size: 32px;
+				color: red;
+			}
+			
+			p::first-line {
+				color: yellow;
+			}
+			
+			p::after {
+				content: "Hey";
+			}
+			
+			p:before {
+				content: "before";
+			}
+			
+			input:enabled {
+				width: 100px;
+				height: 100px;
+			}
+			
+			input:disabled {
+				background-color: green;
+			}
+			
+			input:checked {
+				background-color: red;
+			}
+			/*否定伪类*/
+			
+			p:not(.red) {
+				background-color: red;
+			}
+			/**/
+			
+			h1:target {
+				background-color: red;
+			}
+		</style>
+	</head>
+
+	<body>
+		<p>伪元素设置文字排版为元素设置文字ajfidsjif</p>
+		<!--
+        	作者：1312543912@qq.com
+        	时间：2017-07-14
+        	描述：input是行内快元素
+        	
+        -->
+		<input type="text" name="" />
+		<input type="text" disabled="disabled" name="" /> 男
+		<input type="radio" /> 男
+		<input type="radio" checked="true" />
+
+		<a href="#target1">22</a>
+		<h1>1</h1>
+		<h1>1</h1>
+		<h1>1</h1>
+		<h1>1</h1>
+		<h1>1</h1>
+		<h1>1</h1>
+		<h1>1</h1>
+
+		<h1>1</h1>
+		<h1>1</h1>
+		<h1>1</h1>
+		<h1>1</h1>
+		<h1>1</h1>
+		<h1>1</h1>
+		<h1>1</h1>
+
+		<h1>1</h1>
+		<h1>1</h1>
+		<h1 id="target1">1</h1>
+		<h1>1</h1>
+		<h1>1</h1>
+
+	</body>
+
+</html>

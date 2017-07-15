@@ -1,0 +1,21 @@
+ul {
+	list-style: none;
+	/* 去掉ul前面的符号 */
+	margin: 0px;
+	/* 与外界元素的距离为0 */
+	padding: 0px;
+	/* 与内部元素的距离为0 */
+	width: 180px;
+	/* 宽度根据元素内容调整 */
+}
+.titleLi{
+	background-color: cornflowerblue;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-left: 40px;
+	
+}
+.contenLi{
+	padding-left: 20px;
+	text-indent:5px ;
+}

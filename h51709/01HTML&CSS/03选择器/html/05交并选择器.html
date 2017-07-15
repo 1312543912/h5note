@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*交集选择器*/
+			
+			.basic {
+				color: red;
+				background-color: gray;
+			}
+			
+			h1 {
+				width: 100%;
+				height: 50px;
+			}
+			/*交集选择器   两个选择符叠加匹配  中间没有空格*/
+			
+			h1.basic {
+				height: 150px;
+			}
+			/*如果使用标签与其他选择器做交集   标签名在前*/
+			div.basic2{
+				color: blue;
+			}
+			/*标签类名  可以设置多个*/
+			/*并集选择器   某几个类型的元素统一设置样式    使用，间隔*/
+			h2,h3,h4,label{
+				/*十六进制表示颜色  以#开头，可以是短十六进制3位，或者是6位
+                0-9   a-f(10-15)
+                                          颜色  取自三原色  RGB				 
+				 * */
+				color: orange;
+			}
+			/*精确匹配  选择器权重（优先级）*/
+			.basic.basic2{
+				/*同时匹配采用两个类名元素，<div class="basic basic2">*/
+			   color: red;
+			}
+			.basic,.basic2{
+				/*所有采用basic或者采用basic2都能使用*/
+			   color: green
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1 class="basic">交集选择器</h1>
+		<p class="basic">交际选择器 匹配具体元素</p>
+		<h1>大标题</h1>
+		<p class="basic">交际选择器 匹配具体元素</p>
+
+		<div id="top">头部</div>
+		<div id="nav">导航</div>
+		<div id="main">
+			<div class="basic2 basic">上</div>
+			<div class="basic2">中</div>
+			<div class="basic2">下</div>
+		</div>
+		<div id="foot">底部</div>
+		<p class="basic2">content</p>
+		<h2>二级标题</h2>
+		<h3>三级标题</h3>
+		<h4>adasdfsdk</h4>
+		<label>dfsdf</label>
+		<label>dsfad</label>
+	</body>
+
+</html>
